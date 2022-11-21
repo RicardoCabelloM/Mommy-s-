@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../Mommy's/images/favaicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../Mommy's/css/style.css">
+</head>
+
+<body>
+    <nav>
+
+        <label for="Buscar">Buscar
+            <input type="text">
+        </label>
+
+        <ul class="barraNav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a>Productos</a>
+                <ul>
+                    <li><a href="../pages/produtos.html">Pasteles</a></li>
+                    <li><a href="../pages/produtos.html">Reposteria</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+
+
+        <div>
+            <img class="logo" src="../Mommy's/images/Mommys.png" alt=""
+            width="300px"
+            height="200px">
+        </div>
+
+        <div>
+            <a class="redes"href="https://www.instagram.com/mommysreposteria/"><img src="../Mommy's/images/Instagram_logo_2016.jpg" alt="" width="30px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100063756393945"><img src="../Mommy's/images/Facebook_f_logo_(2019).jpg" alt="" width="30px"></a>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <main>
+        <form class="mensaje" action=""> 
+            <fieldset>
+                <label for="nombre">nombre
+                </label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                <br>
+                <br>
+                <label for="apellido">apellido
+                </label>
+                <input type="text" name="apellido" id="apellio" placeholder="ingrese su apellido">
+                <br>
+                <br>
+                <label for="contraseña">contraseña
+                </label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="ingrese su contraseña">
+                <br>
+                <br>
+                <textarea name="mensaje" id="mensaje" placeholder="ingresar mensaje">Mensaje  </textarea> 
+                <br>
+                <label for="hombre">hombre</label>
+                <input type="radio" name="sexo" id="hombre" value="hombre" checked>
+                <label for="mujer">mujer</label>
+                <input type="radio" name="sexo" id="mujer" value="mujer">
+                <label for="no binario">No binario</label>
+                <input type="radio" name="sexo" id="no binario" value="no binario">
+                <br>
+                <label for="acepta">Acepta terminos y condiciones</label>
+                <input type="checkbox" name="acepta" id="acepta" value="1">
+                <br>   
+                    <label for="talles">talles</label>
+                    <select name="talles" id="talles">
+                        <option value="talles" disabled>Tallas</option>
+                        <option value="XL">extra large</option>
+                        <option value="L">Large</option>
+                        <option value="M">Medium</option>
+                        <option value="S">Small</option>
+                    </select> 
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+                <input type="button" value="para js">
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+       
+    </footer>
+</body>
+</html>

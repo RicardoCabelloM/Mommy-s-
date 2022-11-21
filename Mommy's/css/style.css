@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgba(99, 41, 41, 0.795);
+}
+nav{
+    background-color: rgba(99, 41, 41, 0.795);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    color: white;
+}
+label input{
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgba(99, 41, 41, 0.795);
+}
+
+ul{
+    list-style: none;
+}
+.barraNav a{
+    background-color: rgba(99, 41, 41, 0.795);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.barraNav > li{
+    float: left;
+}
+.barraNav li a:hover{
+    background-color: rgba(118, 49, 49, 0.795);
+}
+.barraNav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.barraNav li:hover > ul{
+    display: block;
+}
+.logo{
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.redes{
+    padding: 10px;
+}
+
+header{
+    background-image: url(../images/proceso-de-pasteleria.avif);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main div{
+    margin-left: 350px;
+    margin-top: 40px;
+    margin: 
+    padding: 150px;
+    width: 200px;
+    background-color: rgba(118, 49, 49, 0.795);
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+}
+
+.button1{
+    margin: 2px;
+    padding: 10px;
+    background-color: rgba(99, 41, 41, 0.795);
+    color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+.button2{
+    margin: 2px;
+    padding: 10px;
+    background-color: rgba(99, 41, 41, 0.795);
+    color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.imgPastel{
+    width: 75%;
+    padding: 10px;
+    margin-left: 25px;
+}
+.imgTit{
+    back
+}
+
+.imgDesc{
+    padding: 10px;
+    margin-left: 25px;
+}
