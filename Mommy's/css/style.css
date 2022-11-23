@@ -8,6 +8,10 @@ html{
 }
 nav{
     background-color: rgba(99, 41, 41, 0.795);
+    background-image: url(../images/Mommy\'s\ nav.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +33,6 @@ ul{
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: block;
 }
 .barraNav > li{
     float: left;
@@ -55,8 +58,8 @@ ul{
 }
 
 header{
-    background-image: url(../images/proceso-de-pasteleria.avif);
-    height: 400px;
+    
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -107,3 +110,4 @@ main div{
     padding: 10px;
     margin-left: 25px;
 }
+
