@@ -1,113 +1,197 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 html{
-    background-color: rgba(99, 41, 41, 0.795);
-}
-nav{
-    background-color: rgba(99, 41, 41, 0.795);
-    background-image: url(../images/Mommy\'s\ nav.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-label{
-    color: white;
-}
-label input{
-    border-radius: 10px;
-    border-color: white;
-    background-color: rgba(99, 41, 41, 0.795);
+    height: auto;
+    background: rgb(81,4,4);
+    background: linear-gradient(177deg, rgba(81,4,4,1) 12%, rgba(135,51,51,1) 70%, rgba(167,112,112,1) 100%);
 }
 
-ul{
-    list-style: none;
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 100%, auto, 100px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
 }
-.barraNav a{
-    background-color: rgba(99, 41, 41, 0.795);
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+
+nav{
+    grid-area: nav;
 }
-.barraNav > li{
-    float: left;
-}
-.barraNav li a:hover{
-    background-color: rgba(118, 49, 49, 0.795);
-}
-.barraNav li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-.barraNav li:hover > ul{
-    display: block;
-}
-.logo{
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid white;
-}
-.redes{
-    padding: 10px;
+
+nav img{
+    margin-left: 93.5px;
+    margin-right: 93.5px;
 }
 
 header{
+    grid-area: header;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.barra{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    color: aliceblue;
+    justify-content: space-between;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.buscar{
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    padding: 3px;
+    margin-left: 30px;
+    left: 0;
     
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+}
+.buscar input{
+    width: 0;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+    transition: 2s;
+    margin-left: 30px;
 }
 
-main div{
-    margin-left: 350px;
-    margin-top: 40px;
-    margin: 
-    padding: 150px;
-    width: 200px;
-    background-color: rgba(118, 49, 49, 0.795);
-    border: 1px solid white;
-    color: white;
-    display: inline-block;
+.buscar:hover input{
+    width: 240px;
 }
 
-.button1{
-    margin: 2px;
-    padding: 10px;
-    background-color: rgba(99, 41, 41, 0.795);
-    color: white;
-    border-color: white;
-    border-style: none;
-    border-radius: 10px;
-    margin-left: 65px;
-}
-.button2{
-    margin: 2px;
-    padding: 10px;
-    background-color: rgba(99, 41, 41, 0.795);
-    color: white;
-    border-color: white;
-    border-style: none;
-    border-radius: 10px;
-    margin-left: 40px;
-}
-.imgPastel{
-    width: 75%;
-    padding: 10px;
-    margin-left: 25px;
-}
-.imgTit{
-    back
+.buscar input:focus{
+    width: 240px;
 }
 
-.imgDesc{
-    padding: 10px;
-    margin-left: 25px;
+.boton{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#c56b6b;
+}
+
+.icon{
+    margin: 12px;
+}
+
+main{
+    grid-area: main;
+    height: 800px;
+}
+
+.formulario{
+    background-color: rgb(72, 7, 7);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "zona1 zona1"
+                         "zona2 zona2"
+                         "zona3 zona3"
+                         "zona4 zona4"
+                         "zona5 zona5"
+                         "zona6 zona6"
+                         "zona7 zona7";  
+    -webkit-box-shadow: 0px 0px 0px 8px #4c0404, 0px 0px 0px 16px #6e2020, 0px 0px 0px 24px #822b2b, 0px 0px 0px 39px #983e3e, 6px 6px 34px 21px #c56b6b; box-shadow: 0px 0px 0px 8px #4c0404, 0px 0px 0px 16px #6e2020, 0px 0px 0px 24px #822b2b, 0px 0px 0px 39px #983e3e, 6px 6px 34px 21px #c56b6b
+}
+
+.formulario h1{
+    margin: 25px;
+    color: white;
+    grid-area: zona1;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario :nth-child(2){
+    grid-area: zona2;
+}
+.formulario :nth-child(3){
+    grid-area: zona3;
+}
+.formulario :nth-child(4){
+    grid-area: zona4;
+}
+.formulario :nth-child(5){
+    grid-area: zona5;
+}
+.formulario :nth-child(6){
+    grid-area: zona6;
+}
+.formulario :nth-child(7){
+    grid-area: zona7;
+}
+
+.formulario input{
+    color: rgb(255, 255, 255);
+    width: 90%;
+    height: 40px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+input:hover{
+    color: aliceblue;
+    opacity: .75;
+    border: none;   
+    outline: none;
+    -webkit-box-shadow: 5px 5px 15px 5px #ffffff; 
+    box-shadow: 5px 5px 15px 5px #ffffff;
+}
+
+.formulario button{
+    background-color: #983e3e;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.formulario button:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #ffffff; 
+    box-shadow: 5px 5px 15px 5px #ffffff;
+}
+
+footer{
+    grid-area: footer;
+    height: 90px;
 }
 
