@@ -23,6 +23,7 @@ body{
 
 nav{
     grid-area: nav;
+    width: 1519.2px;
 }
 
 nav img{
@@ -32,6 +33,7 @@ nav img{
 
 header{
     grid-area: header;
+    width: 1519.2px;
     height: 70px;
     display: flex;
     justify-content: space-around;
@@ -101,7 +103,32 @@ ul > li{
 
 main{
     grid-area: main;
-    height: 800px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-areas: tarjeta1 tarjeta2;
+    height: auto;
+    width: 1519.2px;
+}
+.tarjetas{
+    width: 950px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.insta{
+    grid-area: tarjeta1;
+    width: 450px;
+}
+
+.tarjeta{
+    grid-area: tarjeta2;
+    margin: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: aliceblue;
+    width: 250px;
+    height: 350px;
 }
 
 .formulario{
@@ -109,6 +136,7 @@ main{
     max-width: 800px;
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -193,5 +221,16 @@ input:hover{
 footer{
     grid-area: footer;
     height: 90px;
+    width: 1519.2px;
+}
+
+.redes{
+    margin: auto;
+    width: 120px;
+    justify-content: center;
+}
+
+.redes img{
+    margin: 10px;
 }
 
