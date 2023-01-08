@@ -46,13 +46,30 @@ header{
     color: aliceblue;
     justify-content: space-between;
 }
+.barra ul{
+    list-style: none;
+}
 
+.barra li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.barra ul li a{
+    display: none;
+    text-decoration: none;
+    color: aliceblue;
+}
 li:hover{
     text-decoration: underline;
 }
 
-ul > li{
-    list-style: none;
+.barra li ul li:hover a{
+    display:block;
+}
+
+li{
+    cursor: pointer;
 }
 
 .buscar{
@@ -133,7 +150,7 @@ main{
 
 .formulario{
     background-color: rgb(72, 7, 7);
-    max-width: 800px;
+    width: 800px;
     margin: auto;
     margin-top: 70px;
     margin-bottom: 70px;
