@@ -25,10 +25,52 @@ nav{
     grid-area: nav;
     width: 1519.2px;
 }
+<<<<<<< Updated upstream
 
 nav img{
     margin-left: 93.5px;
     margin-right: 93.5px;
+=======
+.barraNav > li{
+    float: left;
+}
+.barraNav li a:hover{
+    background-color: rgba(118, 49, 49, 0.795);
+}
+.barraNav li ul{
+    display: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+li:hover{
+    text-decoration: underline;
+}
+
+.barra li ul li:hover a{
+    display:block;
+}
+
+li{
+    cursor: pointer;
+}
+
+.buscar{
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    min-width: 140px;
+}
+.barraNav li:hover > ul{
+    display: block;
+}
+.logo{
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.redes{
+    padding: 10px;
+>>>>>>> Stashed changes
 }
 
 header{
