@@ -25,105 +25,63 @@ nav{
     grid-area: nav;
     width: 1519.2px;
 }
-<<<<<<< Updated upstream
 
 nav img{
     margin-left: 93.5px;
     margin-right: 93.5px;
-=======
-.barraNav > li{
-    float: left;
-}
-.barraNav li a:hover{
-    background-color: rgba(118, 49, 49, 0.795);
-}
-.barraNav li ul{
-    display: none;
-    text-decoration: none;
-    color: aliceblue;
-}
-li:hover{
-    text-decoration: underline;
-}
-
-.barra li ul li:hover a{
-    display:block;
-}
-
-li{
-    cursor: pointer;
-}
-
-.buscar{
-    display: flex;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    min-width: 140px;
-}
-.barraNav li:hover > ul{
-    display: block;
-}
-.logo{
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid white;
-}
-.redes{
-    padding: 10px;
->>>>>>> Stashed changes
 }
 
 header{
     grid-area: header;
     width: 1519.2px;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
+    height: 90px; 
 }
 
 .barra{
     display: flex;
-    list-style: none;
-    width: 500px;
+    justify-content: center;
     color: aliceblue;
-    justify-content: space-between;
-}
-.barra ul{
-    list-style: none;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.barra li a{
+.barra a{
     color: aliceblue;
     text-decoration: none;
 }
 
-.barra ul li a{
-    display: none;
-    text-decoration: none;
-    color: aliceblue;
-}
-li:hover{
+.barra a:hover{
     text-decoration: underline;
 }
 
-.barra li ul li:hover a{
-    display:block;
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-li{
-    cursor: pointer;
+.barra li{
+    display: inline;
+    position: relative;
+    margin-inline: 
+}
+
+.barra li ul{
+    display: none;
+    position: absolute;
+}
+
+.barra li:hover ul{
+    display: block;
 }
 
 .buscar{
-    display: flex;
     color: rgb(255, 255, 255);
     position: absolute;
     height: 20px;
     width: 30px;
     padding: 3px;
     margin-left: 30px;
-    left: 0;
-    
+    margin-top: 30px;
 }
 .buscar input{
     width: 0;
@@ -175,11 +133,6 @@ main{
     justify-content: space-around;
 }
 
-.insta{
-    grid-area: tarjeta1;
-    width: 450px;
-}
-
 .tarjeta{
     grid-area: tarjeta2;
     margin: 30px;
@@ -188,6 +141,31 @@ main{
     border-color: aliceblue;
     width: 250px;
     height: 350px;
+}
+
+.img{
+    width: 200px;
+    height: 250px;
+    margin: 23px;
+}
+
+.btn{
+    margin: 0px 95px 0px 95px;
+    padding: 5px;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    -webkit-box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.7); 
+    box-shadow: 0px 0px 25px 1px rgba(255,255,255,0.7);
+}
+
+.insta{
+    grid-area: tarjeta1;
+    width: 450px;
 }
 
 .formulario{
@@ -293,3 +271,18 @@ footer{
     margin: 10px;
 }
 
+.circle{
+    background-color:aquamarine;
+    border: solid 2px;
+    border-color:aqua;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    animation: rotateHue 6s alternate-reverse infinite;
+}
+
+@keyframes rotateHue {
+    to{
+        filter: hue-rotate(1turn);
+    }
+}
