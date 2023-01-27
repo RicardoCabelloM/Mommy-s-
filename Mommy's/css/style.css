@@ -62,7 +62,7 @@ li:hover{
 .barra li{
     display: inline;
     position: relative;
-    margin-inline: 
+
 }
 
 .barra li ul{
@@ -140,7 +140,11 @@ main{
     border-radius: 5px;
     border-color: aliceblue;
     width: 250px;
-    height: 350px;
+    height: 360px;
+}
+
+.tarjeta:hover{
+    transform: scale(.95);
 }
 
 .img{
@@ -149,7 +153,13 @@ main{
     margin: 23px;
 }
 
-.btn{
+.precio{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.comprar{
     margin: 0px 95px 0px 95px;
     padding: 5px;
     background-color: transparent;
@@ -158,7 +168,7 @@ main{
     border-radius: 5px;
 }
 
-.btn:hover{
+.comprar:hover{
     -webkit-box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.7); 
     box-shadow: 0px 0px 25px 1px rgba(255,255,255,0.7);
 }
