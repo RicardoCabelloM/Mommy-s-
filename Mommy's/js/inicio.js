@@ -69,5 +69,5 @@ function total(){
 
 total();
 
-// console.log(pasteles);
+console.log(pasteles);
 
