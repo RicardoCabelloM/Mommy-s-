@@ -40,34 +40,34 @@ console.log (costoTotal);
 
 
 
-// class Producto{
-//     constructor(pastel, cantidad, precio){
-//         this.pastel= pastel.toUpperCase();
-//         this.cantidad= parseInt(cantidad);
-//         this.precio= parseFloat(precio);
-//         this.vendido= false;
-//         this.total= 0;
-//     }
-//     sumaIva(){
-//         this.precio = this.precio * .16 + this.precio;
-//     }
-// }
-// const pasteles=[];
-// pasteles.push(new Producto("Pay de fresa", 1, 500));
-// pasteles.push(new Producto("Pay de mango", 1, 270));
-// pasteles.push(new Producto("pastel de fresa", 1, 150));
-// pasteles.push(new Producto("Pastel cruz azul", 1, 400));
-// pasteles.push(new Producto("Pastel Personalizdo", 1, 400))
+class Producto{
+    constructor(pastel, cantidad, precio){
+        this.pastel= pastel.toUpperCase();
+        this.cantidad= parseInt(cantidad);
+        this.precio= parseFloat(precio);
+        this.vendido= false;
+        this.total= 0;
+    }
+    sumaIva(){
+        this.precio = this.precio * .16 + this.precio;
+    }
+}
+const pasteles=[];
+pasteles.push(new Producto("Pay de fresa", 1, 500));
+pasteles.push(new Producto("Pay de mango", 1, 270));
+pasteles.push(new Producto("pastel de fresa", 1, 150));
+pasteles.push(new Producto("Pastel cruz azul", 1, 400));
+pasteles.push(new Producto("Pastel Personalizdo", 1, 400))
 
-// function total(){
-//     for (const producto of pasteles ){
-//         producto.sumaIva();
-//         producto.total = producto.precio * producto.cantidad;
-//         producto.vendido = true;
-//     }
-// }
+function total(){
+    for (const producto of pasteles ){
+        producto.sumaIva();
+        producto.total = producto.precio * producto.cantidad;
+        producto.vendido = true;
+    }
+}
 
-// total();
+total();
 
 // console.log(pasteles);
 
